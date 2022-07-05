@@ -25,7 +25,7 @@ export function Video({ lessonSlug }: VideoParams) {
   return (
     <div className="flex-1">
       <div className="bg-black flex justify-center">
-        <div className="h-full w-full max-w-[1100px] max-h-[60vh] aspect-video">
+        <div className="h-full w-full max-w-[1100px] max-h-[60vh] px-4 aspect-video">
           <Player>
             <Youtube videoId={data.lesson.videoId} />
             <DefaultUi />
@@ -34,19 +34,19 @@ export function Video({ lessonSlug }: VideoParams) {
       </div>
 
       <div className="p-8 max-w-[1100px] mx-auto">
-        <div className="flex items-start gap-16">
+        <div className="flex items-start gap-8 xl:gap-16 flex-col md:flex-row">
           <div className="flex-1">
             <h1 className="text-2xl font-bold">
               {data.lesson.title}
             </h1>
-            <p className="mt-4 text-gray-200 leading-relaxed">
+            <p className="mt-4 text-gray-200 leading-relaxed text-justify sm:text-left">
               {data.lesson.description}
             </p>
 
             {data.lesson.teacher && (
               <div className="flex items-center gap-4 mt-6">
                 <img 
-                  className="h-16 w-16 rounded-full border-2 border-blue-500"
+                  className="h-16 w-16 rounded-full border-2 border-orange-800"
                   src={data.lesson.teacher.avatarURL} 
                   alt="Avatar usuário Github" 
                 />
@@ -59,21 +59,21 @@ export function Video({ lessonSlug }: VideoParams) {
             )}
           </div>
 
-          <div className="flex flex-col gap-4">
-            <a href="" className="p-4 text-sm bg-green-500 flex items-center rounded font-bold uppercase gap-2 justify-center hover:bg-green-700 transition-colors">
+          <div className="flex w-full sm:w-fit flex-col sm:flex-row md:flex-col gap-4">
+            <a href="" className="p-4 text-sm bg-orange-800 text-gray-900 flex items-center rounded font-bold uppercase gap-2 justify-center hover:bg-orange-900 hover:text-white transition-colors">
               <DiscordLogo size={24} /> 
               Comunidade do Discord
             </a>
 
-            <a href="" className="p-4 text-sm border-blue-500 border text-blue-500 flex items-center rounded font-bold uppercase gap-2 justify-center hover:bg-blue-500 hover:text-gray-900 transition-colors">
+            <a href="" className="p-4 text-sm border-indigo-700 border text-indigo-700 flex items-center rounded font-bold uppercase gap-2 justify-center hover:bg-indigo-700 hover:text-white transition-colors">
               <Lightning size={24} /> 
               Acesse o desafio
             </a>
           </div>
         </div>
-        <div className="gap-8 mt-20 grid grid-cols-2">
+        <div className="gap-8 max-w-[600px] lg:max-w-[1100px] w-full mt-10 lg:mt-20 grid grid-cols-1 lg:grid-cols-2 mx-auto">
           <a href="" className="bg-gray-700 overflow-hidden rounded flex items-stretch gap-6 hover:bg-gray-600 transition-colors">
-            <div className="bg-green-700 h-full p-6 flex items-center">
+            <div className="bg-orange-800 h-full p-6 flex items-center">
               <FileArrowDown size={40} />
             </div>
             <div className="py-6 leading-relaxed">
@@ -88,7 +88,7 @@ export function Video({ lessonSlug }: VideoParams) {
           </a>
 
           <a href="" className="bg-gray-700 overflow-hidden rounded flex items-stretch gap-6 hover:bg-gray-600 transition-colors">
-            <div className="bg-green-700 h-full p-6 flex items-center">
+            <div className="bg-orange-800 h-full p-6 flex items-center">
               <FileArrowDown size={40} />
             </div>
             <div className="py-6 leading-relaxed">
