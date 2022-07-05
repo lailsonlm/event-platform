@@ -26,12 +26,12 @@ export default function Subscribe() {
   }
 
   return (
-    <div className="min-h-screen bg-blur bg-cover bg-no-repeat flex flex-col items-center">
-      <div className="w-full max-w-[1100px] flex items-center justify-between mt-20 mx-auto">
+    <div className="min-h-screen bg-blur bg-cover bg-no-repeat flex flex-col items-center px-4 lg:px-6">
+      <div className="w-full max-w-[1100px] flex flex-col lg:flex-row items-center gap-10 lg:gap-0 justify-between mt-20 mx-auto">
         <div className="max-w-[640px]">
           <Logo />
 
-          <h1 className="mt-8 text-[2.5rem] leading-tight">
+          <h1 className="mt-8 text-3xl md:text-[2.5rem] leading-tight">
             Recriando o <strong className="text-orange-800">Microsoft Teams</strong>, do zero, com <strong className="text-orange-800">React</strong>
           </h1>
           <p className="mt-4 text-gray-200 leading-relaxed">
@@ -39,7 +39,7 @@ export default function Subscribe() {
           </p>
         </div>
 
-        <div className="p-8 bg-[#191321] border border-gray-500 rounded">
+        <div className="p-8 bg-[#191321] border border-gray-500 rounded w-full max-w-[640px] lg:w-fit">
           <strong className="text-2xl mb-6 block">Increva-se gratuitamente</strong>
 
           <form onSubmit={handleSubscribe} className="flex flex-col gap-2 w-full">
@@ -66,7 +66,7 @@ export default function Subscribe() {
           </form>
         </div>
       </div>
-      <img src={codeMockup} alt="Imagem ilustrativa VSCode" className="mt-10" />
+      <img src={codeMockup} alt="Imagem ilustrativa VSCode" className="mt-4 lg:mt-10" />
     </div>
   )
 }

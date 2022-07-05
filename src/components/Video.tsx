@@ -36,7 +36,7 @@ export function Video({ lessonSlug }: VideoParams) {
       <div className="p-8 max-w-[1100px] mx-auto">
         <div className="flex items-start gap-8 xl:gap-16 flex-col md:flex-row">
           <div className="flex-1">
-            <h1 className="text-2xl font-bold">
+            <h1 className="text-lg md:text-2xl font-bold">
               {data.lesson.title}
             </h1>
             <p className="mt-4 text-gray-200 leading-relaxed text-justify sm:text-left">
@@ -52,7 +52,7 @@ export function Video({ lessonSlug }: VideoParams) {
                 />
 
                 <div className="leading-relaxed">
-                  <strong className="font-bold text-2xl block">{data.lesson.teacher.name}</strong>
+                  <strong className="font-bold text-lg md:text-2xl block">{data.lesson.teacher.name}</strong>
                   <strong className="text-gray-200 text-sm block">{data.lesson.teacher.bio}</strong>
                 </div>
               </div>
@@ -72,32 +72,32 @@ export function Video({ lessonSlug }: VideoParams) {
           </div>
         </div>
         <div className="gap-8 max-w-[600px] lg:max-w-[1100px] w-full mt-10 lg:mt-20 grid grid-cols-1 lg:grid-cols-2 mx-auto">
-          <a href="" className="bg-gray-700 overflow-hidden rounded flex items-stretch gap-6 hover:bg-gray-600 transition-colors">
-            <div className="bg-orange-800 h-full p-6 flex items-center">
+          <a href="" className="bg-gray-700 overflow-hidden rounded flex items-stretch gap-4 md:gap-6 hover:bg-gray-600 transition-colors">
+            <div className="bg-orange-800 h-full p-4 md:p-6 flex items-center">
               <FileArrowDown size={40} />
             </div>
             <div className="py-6 leading-relaxed">
-              <strong className="text-2xl">Meterial complementar</strong>
+              <strong className="text-lg md:text-2xl">Material complementar</strong>
               <p className="text-sm text-gray-200 mt-2">
                 Acesse o material complementar para acelerar o seu desenvolvimento
               </p>
             </div>
-            <div className="h-full p-6 flex items-center">
+            <div className="h-full p-4 md:p-6 flex items-center">
               <CaretRight size={24} />
             </div>
           </a>
 
-          <a href="" className="bg-gray-700 overflow-hidden rounded flex items-stretch gap-6 hover:bg-gray-600 transition-colors">
-            <div className="bg-orange-800 h-full p-6 flex items-center">
+          <a href="" className="bg-gray-700 overflow-hidden rounded flex items-stretch gap-4 md:gap-6 hover:bg-gray-600 transition-colors">
+            <div className="bg-orange-800 h-full p-4 md:p-6 flex items-center">
               <FileArrowDown size={40} />
             </div>
             <div className="py-6 leading-relaxed">
-              <strong className="text-2xl">Wallpapers exclusivos</strong>
+              <strong className="text-lg md:text-2xl">Wallpapers exclusivos</strong>
               <p className="text-sm text-gray-200 mt-2">
               Baixe wallpapers exclusivos do Ignite Lab e personalize a sua máquina
               </p>
             </div>
-            <div className="h-full p-6 flex items-center">
+            <div className="h-full p-4 md:p-6 flex items-center">
               <CaretRight size={24} />
             </div>
           </a>

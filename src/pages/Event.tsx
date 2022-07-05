@@ -12,7 +12,7 @@ export default function Event() {
       <main className="flex flex-1 flex-col lg:flex-row">
         { slug 
         ? <Video lessonSlug={slug} /> 
-        : <div className="flex-1 flex flex-col items-center justify-center">
+        : <div className="flex-1 flex py-32 lg:py-0 flex-col items-center justify-center">
             <strong className="font-bold text-lg">Nenhuma aula selecionada.</strong>
             <p className="text-sm">Escolha a aula que deseja assistir no menu ao lado!</p>
           </div>
