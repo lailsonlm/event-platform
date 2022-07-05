@@ -60,7 +60,7 @@ export function Video({ lessonSlug }: VideoParams) {
           </div>
 
           <div className="flex w-full sm:w-fit flex-col sm:flex-row md:flex-col gap-4">
-            <a href="" className="p-4 text-sm bg-orange-800 text-gray-900 flex items-center rounded font-bold uppercase gap-2 justify-center hover:bg-orange-900 hover:text-white transition-colors">
+            <a href="https://discord.gg/qmJdQgP5EC" target="_blank" className="p-4 text-sm bg-orange-800 text-gray-900 flex items-center rounded font-bold uppercase gap-2 justify-center hover:bg-orange-900 hover:text-white transition-colors">
               <DiscordLogo size={24} /> 
               Comunidade do Discord
             </a>
